@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Docs — Nexora Pro</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet"><link rel="stylesheet" href="css/style.css"></head>
+<body><div class="noise"></div><header class="site-header"><div class="container nav-wrap"><a class="brand" href="index.html"><span class="brand-mark">N</span><span>NEXORA<span class="brand-dot">.</span></span></a><button class="mobile-menu" aria-label="Open menu" data-menu>☰</button><nav class="main-nav" data-nav><a href="index.html">Home</a><a href="features.html">Features</a><a href="pricing.html">Pricing</a><a class="active" href="docs.html">Docs</a><a href="faq.html">FAQ</a></nav><div class="nav-actions"><button class="theme-toggle" data-theme-toggle aria-label="Toggle theme"><span class="sun">☼</span><span class="moon">◐</span></button><a class="nav-cta" href="pricing.html">Start building <span>↗</span></a></div></div></header>
+<main><section class="page-hero"><div class="container"><span class="section-kicker">DEVELOPER DOCS / QUICKSTART</span><h1>Build with<br><span class="gradient-text">Nexora.</span></h1><p>A clean API surface designed to fit into your existing development workflow.</p></div></section>
+<section class="section"><div class="container docs-layout"><aside class="docs-side"><b>GET STARTED</b><a class="active" href="#quickstart">Quickstart</a><a href="#agent">Agent API</a><a href="#context">Context</a><a href="#security">Security</a></aside><div class="docs-content"><section id="quickstart"><span class="section-kicker">01 / QUICKSTART</span><h2>Install in seconds.</h2><p>Add the SDK to your existing project and initialize your first agent.</p><div class="code-editor"><div class="code-head"><span>terminal</span><button data-copy="npm install @nexora/sdk">Copy</button></div><pre><code>$ npm install @nexora/sdk
+
+$ nexora init
+
+✓ Workspace connected
+✓ Repository indexed
+✓ AI agent ready</code></pre></div></section><section id="agent"><span class="section-kicker">02 / AGENT API</span><h2>Ask the agent.</h2><div class="code-editor"><div class="code-head"><span>agent.ts</span><button data-copy="const result = await agent.run('Build a secure auth flow');">Copy</button></div><pre><code><em>import</em> { Agent } <em>from</em> <strong>'@nexora/sdk'</strong>;
+
+<em>const</em> agent = <em>new</em> Agent({
+  model: <strong>'nexora-pro'</strong>,
+  workspace: <strong>'./'</strong>
+});
+
+<em>const</em> result = <em>await</em> agent.run(
+  <strong>'Build a secure auth flow'</strong>
+);
+
+console.log(result.diff);</code></pre></div></section><section id="context"><span class="section-kicker">03 / CONTEXT</span><h2>Give AI the right context.</h2><p>Nexora indexes source code, documentation and project metadata locally so suggestions can reference the systems your team actually maintains.</p></section><section id="security"><span class="section-kicker">04 / SECURITY</span><h2>Your code stays yours.</h2><p>Enterprise controls, scoped permissions and configurable retention policies keep your development environment under your team's control.</p></section></div></div></section></main>
+<footer class="footer"><div class="container footer-grid"><div><a class="brand" href="index.html"><span class="brand-mark">N</span><span>NEXORA<span class="brand-dot">.</span></span></a><p>AI coding infrastructure for modern teams.</p></div><div><b>Product</b><a href="features.html">Features</a><a href="pricing.html">Pricing</a></div><div><b>Resources</b><a href="docs.html">Documentation</a><a href="faq.html">FAQ</a></div><div><b>Company</b><a href="#">Security</a><a href="#">Status</a></div></div><div class="container footer-bottom"><span>© 2026 Nexora Labs</span><span>Built for builders.</span></div></footer><script src="js/app.js"></script></body></html>
